@@ -267,7 +267,7 @@
         <center><h1>Sign Up</h1></center>
 
         <center>
-          <p><b><u>Dates served are June 2nd - July 31st Monday-Thursdays</u></b></p>
+          <p><b><u>Dates served are June 1st - July 30th Monday-Thursdays</u></b></p>
         </center>
         <p>Sack lunches will be prepared for pick up at local parks and areas in Bonham. Lunches will be four days a week, Monday through Thursday, with the exception of July 4th in order to observe Independence Day.</p>
         <p>If you are interested in your child or children participating please fill out the questionnaire and submit.</p>
