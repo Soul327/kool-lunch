@@ -1,10 +1,15 @@
+function getUnix(dateString) {
+	const date = new Date(dateString);
+	return isNaN(date) ? null : Math.floor(date.getTime() / 1000);
+}
+
 $(document).ready(async function() {
 	addPage("Forms", async (page)=>{
     page.append($("<center>").append(("<p>Loading Please Wait...</p>")))
 		let rawData = (await post("/ajax/admin.php", {
 			function: 3,
-      startTime: 1735689600,
-      endTime: 1767052800
+			startTime: getUnix("01-01-2026 01:00:00"),
+			endTime: getUnix("01-01-2027 01:00:00") - 1
 		}));
     page.empty();
 
