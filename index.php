@@ -214,8 +214,8 @@
 
         <div>
           <h2>Volunteers</h2>
-          <p>Church of Jesus Christ and Latter Day Saints</p>
-          <p>Fannin County Sheriff's Office</p>
+          <p>St. Elizabeth Catholic Church</p>
+          <p>First Congregational Church of Bonham</p>
 
           <p>First Presbyterian Church</p>
           <p>Northside Church of Christ</p>
