@@ -1,0 +1,30 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: kool-lunches-apache
+    restart: no
+    volumes:
+      - .:/var/www/html
+    ports:
+      - "127.0.0.1:80:80"
+    depends_on:
+      - db
+    environment:
+      - MYSQL_HOST=db
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=example
+      - MYSQL_DATABASE=myapp
+
+  db:
+    container_name: kool-lunches-mysql
+    image: mysql:8.0
+    restart: no
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: myapp
+    volumes:
+      - ./database-data:/var/lib/mysql
+    ports:
+      - "127.0.0.1:3306:3306"

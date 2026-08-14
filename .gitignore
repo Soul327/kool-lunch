@@ -1,3 +1,4 @@
 /res/secret.php
 /res/db.php
 error_log
+database-data
